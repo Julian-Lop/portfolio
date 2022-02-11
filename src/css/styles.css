@@ -442,7 +442,7 @@ header {
   flex-wrap: wrap;
 }
 .sectionPortfolio .containerProyects .proyect {
-  margin: 2px;
+  margin: 10px;
   border-radius: 10px;
   height: 50%;
   width: 40%;
@@ -460,7 +460,7 @@ header {
   border-radius: 20px;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 174, 255, 0.1), rgba(0, 174, 255, 0.3));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
   display: flex;
   align-items: flex-end;
 }
