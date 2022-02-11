@@ -1,0 +1,158 @@
+.sectionAbout {
+    background: #232526; 
+    background: -webkit-linear-gradient(to top, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #232526, #414345);
+    height: @configheight; 
+    width: @configwidth; 
+    margin-bottom: @configm-bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .imagenperfil{
+        width: 25%;
+        height: 60%;
+        position: relative;
+        // background: chartreuse;
+        margin-left: 4%;
+        .back{
+            position: absolute;
+            height: 88%;
+            width: 78%;
+            border: #ffa500 solid;
+            border-width: 5px;
+            z-index: 1;
+        }
+        .front{
+            position: absolute;
+            margin-left: 6%;
+            margin-top: 5%;
+            height: 90%;
+            width: 80%;
+            background-size: 100% 100%;
+            background-image: url('../images/perfil.jpg');
+            z-index: 2;
+        }
+    }
+
+    .info{
+        margin-right: 3%;
+        // background: gray;
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .left-part{
+            width: 80%;
+            height: 90%;
+            h2{
+                font-family: 'League Spartan', sans-serif;
+                font-size: 35px;
+                color: white;
+                font-weight: bold;
+                text-decoration-line: underline;
+                text-decoration-color: orange;
+            }
+            p{
+                color: #dbd9d9;
+                font-family: 'Libre Baskerville',serif;
+                font-size: 18px;
+            }
+        }
+        button{
+            background: orange;
+            border-radius: 5px;
+            border-style: none;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'League Spartan', sans-serif;
+            height: 50px;
+            width: 120px;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0px 0px 18px -1px orange,
+                            0px 0px 18px -1px orange;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and(max-width:@widthTablet){
+    .sectionAbout{
+        .imagenperfil{
+            width: 35%;
+            height: 40%;
+            position: relative;
+            // background: chartreuse;
+            margin-left: 5%;
+            .back{
+                position: absolute;
+                height: 88%;
+                width: 78%;
+                border: orange solid;
+                border-width: 5px;
+                z-index: 1;
+            }
+            .front{
+                position: absolute;
+                margin-left: 6%;
+                margin-top: 5%;
+                height: 90%;
+                width: 80%;
+                background-size: 100% 100%;
+                background-image: url('../images/perfil.jpg');
+                z-index: 2;
+            }
+        }
+
+        .info{
+            .left-part{
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:@widthTabletmin){
+    .sectionAbout{
+        .imagenperfil{
+            width: 45%;
+            margin-left: 6%;
+        }
+        .info{
+            .left-part{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:@widthPhone){
+    .sectionAbout{
+        height: 650px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .imagenperfil{
+            margin-left: 10%;
+            height: 30%;
+            width: 60%;
+        }
+        .info{
+            width: 70%;
+            margin-left: 10%;
+            margin-right: 0;
+        }
+    }
+}

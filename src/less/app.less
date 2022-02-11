@@ -1,0 +1,152 @@
+header{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.nav{
+    font-family: decker;
+    z-index: 4;
+    top: 0vw;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: rgba(255, 143, 14, 0.5);
+    display: inline-flex;
+    align-items: center;
+    transition: 1s;
+    .menulist{
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        a{
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            &:hover{
+                border-bottom: 2px solid orange;
+                transition: 0.1s;
+            }
+        }
+        li{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .barmenu{
+        display: none;
+    }
+
+    button{
+        margin-left: 5%;
+        border-style: none;
+        background: none;
+    }
+
+    img{
+        height: 28px;
+        width: 28px;
+        cursor: pointer;
+    }
+
+    .navsuper{
+        position: fixed;
+        display: none;
+        height: 80px;
+        width: 100%;
+        background: #191919;
+    }
+
+}
+
+.container{
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+
+
+
+.showmenulist{
+    position: absolute;
+    top: 62px;
+    color: white;
+    width: 100%;
+    background: rgba(25, 25, 25,0.8);
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    a{  
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        &:hover{
+            border-bottom: 2px solid orange;
+            transition: 0.1s;
+        }
+    }
+    li{
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        &:hover{
+            background: rgba(255, 165, 0,0.6);
+        }
+        transition: 1s;
+    }
+}
+
+
+@media screen and(max-width: @widthTablet){
+    .nav{
+        background: none;
+        transition: 1s;
+        .menulist{
+            position: absolute;
+            top: -65vw;
+            color: white;
+            width: 100%;
+            background: rgba(25, 25, 25,0.8);
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            transition: all 1s;
+            a{
+                font-weight: bold;
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 2px solid orange;
+                    transition: 0.1s;
+                }
+            }
+            li{ 
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    background: rgba(255, 165, 0,0.6);
+                }
+                transition: 1s;
+            }
+        }
+        .barmenu{
+            display: block;
+            z-index: 2;
+        }
+
+        .navsuper{
+            z-index: 1;
+            display: block;
+        }
+    }
+}
