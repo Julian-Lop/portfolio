@@ -38,13 +38,14 @@ function SectionContact() {
 
   function enviarEmail(e){
       e.preventDefault();
-
+    if(!errorName && !errorEmail){
       emailjs.sendForm('gmailMensajeForm', 'template_pu1aqwb', e.target,'user_2P3A2kGKipIK2t8RPnwUP')
         .then((result) => {
             alert('mensaje enviado con exito')
         }, (error) => {
             alert(error.message)
         });
+    }
   }
 
   return (

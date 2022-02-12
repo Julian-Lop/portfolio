@@ -11,9 +11,11 @@ function SectionAbout() {
         <div className="left-part" >
           <h2>About</h2>
           <p>
-            Hola, soy Julian Lopez, desarrollador web, fullstack. Con técnico en programación de software
+            Hola, soy Julian Lopez, desarrollador web, fullstack. Con técnico en programación de software,
             hice el bootcamp de HENRY, estudio ingeniería en sistemas y soy muy
             apasionado por este campo.
+            Tecnologías en frontend: HTML / JavaScript / React / Redux / CSS / Less.
+            Tecnologías en backend: Node js / Express / Postgresql / MySql / MongoDB / Sequelize ORM.
           </p>
         </div>
         <div>
