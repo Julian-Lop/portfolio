@@ -1,5 +1,6 @@
 import '../css/styles.css';
 import videoWeather from '../videos/videoPruebaWeather.mp4'
+import videodog from '../videos/review-pi-dog.mp4'
 import github from '../images/tabler-icon-brand-github.svg'
 
 function SectionPortfolio() {
@@ -26,7 +27,7 @@ function SectionPortfolio() {
         </div>
         <div className="proyect" >
             <video autoPlay loop muted>
-              <source src={videoWeather} type="video/mp4"/>
+              <source src={videodog} type="video/mp4"/>
             </video>
             <div className="info">
                 <h3><a href="https://julian-lop.github.io/Client-api-dog/" >Proyecto Individual Dogs</a></h3>

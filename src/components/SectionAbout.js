@@ -11,14 +11,13 @@ function SectionAbout() {
         <div className="left-part" >
           <h2>About</h2>
           <p>
-            Hola, soy Julian Lopez, desarrollador web, front-end
-            y back-end. Con técnico en programación de software
-            he hecgo bootcamp de desarrollador fullstack y soy muy
+            Hola, soy Julian Lopez, desarrollador web, fullstack. Con técnico en programación de software
+            hice el bootcamp de HENRY, estudio ingeniería en sistemas y soy muy
             apasionado por este campo.
           </p>
         </div>
         <div>
-            <button>Download CV</button>
+            <a href="../Documentos/cv_Julian_Lopez.pdf" download="Cv-JulianLopez.pdf"><button>Download CV</button></a>
         </div>
       </div>
 
