@@ -1,4 +1,5 @@
 import '../css/styles.css';
+import cvpdf from '../Documentos/cv_Julian_Lopez.pdf'
 
 function SectionAbout() {
   return (
@@ -19,7 +20,7 @@ function SectionAbout() {
           </p>
         </div>
         <div>
-            <a href="../Documentos/cv_Julian_Lopez.pdf" download="Cv-JulianLopez.pdf"><button>Download CV</button></a>
+            <a href={cvpdf} download><button>Download CV</button></a>
         </div>
       </div>
 
