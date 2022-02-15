@@ -58,7 +58,7 @@ function App() {
             </a>
             <a href="#about" ><li>Acerca de mí</li></a>
             <a href="#portfolio" ><li>Portfolio</li></a>
-            <a href="#contact" ><li>Contacto</li></a>
+            <a href="#contact"><li>Contacto</li></a>
           </ul>
         </div>
         <div className='container' >
