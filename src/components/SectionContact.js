@@ -6,6 +6,9 @@ import '../css/styles.css';
 function SectionContact() {
   const [errorName, setErrorName] = useState('not numbers')
   const [errorEmail, setErrorEmail] = useState('email invalid')
+  const [nombre, setNombre] = useState('')
+  const [email, setEmail] = useState('')
+  const [mensaje, setMensaje] = useState('')
 
   function validateForm(target){
     let errorN = ''
@@ -21,6 +24,7 @@ function SectionContact() {
           errorN= ''
         }
         setErrorName(errorN)
+        setNombre(target.value)
       }
       
       if(target.name === 'email'){
@@ -31,13 +35,17 @@ function SectionContact() {
           console.log(errorEmail+'|'+errorName)
         }
         setErrorEmail(errorE)
+        setEmail(target.value)
       }
      
+    }else{
+      setMensaje(target.value)
     }
+    
   }
 
   function enviarEmail(e){
-      e.preventDefault();
+    e.preventDefault();
     if(!errorName && !errorEmail){
       emailjs.sendForm('gmailMensajeForm', 'template_pu1aqwb', e.target,'user_2P3A2kGKipIK2t8RPnwUP')
         .then((result) => {
@@ -45,22 +53,28 @@ function SectionContact() {
         }, (error) => {
             alert(error.message)
         });
+        setNombre('')
+        setEmail('')
+        setMensaje('')
     }
+    setNombre('')
+    setEmail('')
+    setMensaje('')
   }
 
   return (
     <div className="sectionContact" id="contact">
       <div>
-        <h1>Contact</h1>
+        <h1>Contacto</h1>
       </div>
       <div className="containerForm">
           <form onSubmit={(enviarEmail)}>
             <label>Nombre</label>
-            <input type='text' name='name' onChange={e => validateForm(e.target)}></input>
+            <input type='text' name='name' value={nombre} onChange={e => validateForm(e.target)}></input>
             <label>Email</label>
-            <input type='text' name='email'onChange={e => validateForm(e.target)}></input>
+            <input type='text' name='email' value={email} onChange={e => validateForm(e.target)}></input>
             <label>Por qué quieres contactarme</label>
-            <textarea type='text' name='message'></textarea>
+            <textarea type='text' name='message' ></textarea>
             {/* <input type='submit'  className='botonSend' value='Enviar' /> */}
             <button type='submit' disabled={ (errorName || errorEmail) && true} >Enviar</button>
           </form>

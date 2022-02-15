@@ -41,24 +41,24 @@ function App() {
               <img src={barmenu} alt="barra-menu"/></button>
           <div className="navsuper" ></div>
           <ul className="menulist" >
-            <li>
-              <a href="https://github.com/Julian-Lop?tab=repositories">
-                <img src={github} alt="icon1" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/juli%C3%A1n-andr%C3%A9s-l%C3%B3pez-casta%C3%B1eda-924682223/">
-                <img src={linkedin} alt="icon2" />
-              </a>  
-            </li>
-            <li>
-              <a href="#contact">
-                <img src={email} alt="icon3" />
-              </a>
-            </li>
-            <li><a href="#about" >About</a></li>
-            <li><a href="#portfolio" >Portfolio</a></li>
-            <li><a href="#contact" >Contact</a></li>
+            <a href="https://github.com/Julian-Lop">
+              <li>
+                  <img src={github} alt="icon1" />
+              </li>
+            </a>
+            <a href="https://www.linkedin.com/in/juli%C3%A1n-andr%C3%A9s-l%C3%B3pez-casta%C3%B1eda-924682223/">
+              <li>
+                  <img src={linkedin} alt="icon2" />
+              </li>
+            </a>
+            <a href="#contacto">  
+              <li>
+                  <img src={email} alt="icon3" />
+              </li>
+            </a>
+            <a href="#about" ><li>Acerca de mí</li></a>
+            <a href="#portfolio" ><li>Portfolio</li></a>
+            <a href="#contact" ><li>Contacto</li></a>
           </ul>
         </div>
         <div className='container' >

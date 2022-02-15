@@ -2,7 +2,7 @@
     background: #232526; 
     background: -webkit-linear-gradient(to top, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #232526, #414345);
-    height: @configheight; 
+    height: @configheight+100px; 
     width: @configwidth; 
     margin-bottom: @configm-bottom;
     display: flex;
@@ -30,7 +30,7 @@
             margin-top: 5%;
             height: 90%;
             width: 80%;
-            background-size: 100% 100%;
+            background-size: cover;
             background-image: url('../images/perfil.jpg');
             z-index: 2;
         }
@@ -44,6 +44,23 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        .iconos-about{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            flex-wrap: wrap;
+            li{
+                margin-right: 10px;
+            }
+            img{
+                width: 42px;
+            }
+            .larger{
+                img{
+                    width: 65px;
+                }
+            }
+        }
         .left-part{
             width: 80%;
             height: 90%;
@@ -86,6 +103,7 @@
 
 @media screen and(max-width:@widthTablet){
     .sectionAbout{
+        height: @configheight+250px;
         .imagenperfil{
             width: 35%;
             height: 40%;
@@ -118,6 +136,7 @@
                     font-size: 13px;
                 }
             }
+
         }
     }
 }
@@ -134,13 +153,30 @@
                     font-size: 12px;
                 }
             }
+            .iconos-about{
+                margin-left: -30px;
+                display: flex;
+                align-items: center;
+                list-style: none;
+                li{
+                    margin-right: 5px;
+                }
+                img{
+                    width: 22px;
+                }
+                .larger{
+                    img{
+                        width: 35px;
+                    }
+                }
+            }
         }
     }
 }
 
 @media screen and(max-width:@widthPhone){
     .sectionAbout{
-        height: 650px;
+        height: 900px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -153,6 +189,23 @@
             width: 70%;
             margin-left: 10%;
             margin-right: 0;
+            .iconos-about{
+                margin-left: -30px;
+                display: flex;
+                align-items: center;
+                list-style: none;
+                li{
+                    margin-right: 5px;
+                }
+                img{
+                    width: 22px;
+                }
+                .larger{
+                    img{
+                        width: 35px;
+                    }
+                }
+            }
         }
     }
 }

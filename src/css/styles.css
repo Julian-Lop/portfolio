@@ -176,6 +176,7 @@ header {
   font-size: 18px;
 }
 .sectionIntro .perfil {
+  border-radius: 20%;
   z-index: 1;
   height: 95%;
   width: 30%;
@@ -282,7 +283,7 @@ header {
   background: -webkit-linear-gradient(to top, #232526, #414345);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #232526, #414345);
-  height: 800px;
+  height: 900px;
   width: 100%;
   margin-bottom: 10%;
   display: flex;
@@ -310,7 +311,7 @@ header {
   margin-top: 5%;
   height: 90%;
   width: 80%;
-  background-size: 100% 100%;
+  background-size: cover;
   background-image: url('../images/perfil.jpg');
   z-index: 2;
 }
@@ -321,6 +322,21 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.sectionAbout .info .iconos-about {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.sectionAbout .info .iconos-about li {
+  margin-right: 10px;
+}
+.sectionAbout .info .iconos-about img {
+  width: 42px;
+}
+.sectionAbout .info .iconos-about .larger img {
+  width: 65px;
 }
 .sectionAbout .info .left-part {
   width: 80%;
@@ -355,6 +371,9 @@ header {
   box-shadow: 0px 0px 18px -1px orange, 0px 0px 18px -1px orange;
 }
 @media screen and (max-width: 800px) {
+  .sectionAbout {
+    height: 1050px;
+  }
   .sectionAbout .imagenperfil {
     width: 35%;
     height: 40%;
@@ -391,10 +410,25 @@ header {
   .sectionAbout .info .left-part p {
     font-size: 12px;
   }
+  .sectionAbout .info .iconos-about {
+    margin-left: -30px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .sectionAbout .info .iconos-about li {
+    margin-right: 5px;
+  }
+  .sectionAbout .info .iconos-about img {
+    width: 22px;
+  }
+  .sectionAbout .info .iconos-about .larger img {
+    width: 35px;
+  }
 }
 @media screen and (max-width: 420px) {
   .sectionAbout {
-    height: 650px;
+    height: 900px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -408,6 +442,21 @@ header {
     width: 70%;
     margin-left: 10%;
     margin-right: 0;
+  }
+  .sectionAbout .info .iconos-about {
+    margin-left: -30px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .sectionAbout .info .iconos-about li {
+    margin-right: 5px;
+  }
+  .sectionAbout .info .iconos-about img {
+    width: 22px;
+  }
+  .sectionAbout .info .iconos-about .larger img {
+    width: 35px;
   }
 }
 .sectionPortfolio {

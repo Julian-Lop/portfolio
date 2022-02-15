@@ -1,5 +1,14 @@
 import '../css/styles.css';
 import cvpdf from '../Documentos/cv_Julian_Lopez.pdf'
+import html from '../images/html-5.png'
+import js from '../images/js.png'
+import react from '../images/react.png'
+import redux from '../images/redux.png'
+import css from '../images/css.png'
+import node from '../images/node.png'
+import less from '../images/less.png'
+import postgresql from '../images/postgresql.png'
+import mysql from '../images/mysql.png'
 
 function SectionAbout() {
   return (
@@ -10,14 +19,26 @@ function SectionAbout() {
       </div>
       <div className="info" >
         <div className="left-part" >
-          <h2>About</h2>
+          <h2>Acerca de mí</h2>
           <p>
-            Hola, soy Julian Lopez, desarrollador web, fullstack. Con técnico en programación de software,
+            Soy desarrollador web, fullstack. Con técnico en programación de software,
             hice el bootcamp de HENRY, estudio ingeniería en sistemas y soy muy
             apasionado por este campo.
-            Tecnologías en frontend: HTML / JavaScript / React / Redux / CSS / Less.
-            Tecnologías en backend: Node js / Express / Postgresql / MySql / MongoDB / Sequelize ORM.
+            <br/>
+            <br/>
+            Tecnologías: <br/> 
           </p>
+          <ul className="iconos-about">
+            <li><img src={html} /></li>
+            <li className="larger"><img src={less}/></li>
+            <li className="larger"><img src={css}/></li>
+            <li><img src={js}/></li>
+            <li><img src={react}/></li>
+            <li className="larger"><img src={redux}/></li>
+            <li className="larger"><img src={node}/></li>
+            <li className="larger"><img src={postgresql}/></li>
+            <li className="larger"><img src={mysql}/></li>
+          </ul>  
         </div>
         <div>
             <a href={cvpdf} download><button>Download CV</button></a>
