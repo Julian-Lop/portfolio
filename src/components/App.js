@@ -51,7 +51,7 @@ function App() {
                   <img src={linkedin} alt="icon2" />
               </li>
             </a>
-            <a href="#contacto">  
+            <a href="#contact">  
               <li>
                   <img src={email} alt="icon3" />
               </li>
