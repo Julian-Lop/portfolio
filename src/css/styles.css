@@ -420,10 +420,10 @@ header {
     margin-right: 5px;
   }
   .sectionAbout .info .iconos-about img {
-    width: 22px;
+    width: 30px;
   }
   .sectionAbout .info .iconos-about .larger img {
-    width: 35px;
+    width: 40px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -453,10 +453,10 @@ header {
     margin-right: 5px;
   }
   .sectionAbout .info .iconos-about img {
-    width: 22px;
+    width: 30px;
   }
   .sectionAbout .info .iconos-about .larger img {
-    width: 35px;
+    width: 40px;
   }
 }
 .sectionPortfolio {
