@@ -198,6 +198,7 @@ header {
   background-size: 100% 100%;
   filter: blur(3px);
   background-image: url('../images/code.jpg');
+  background-size: cover;
 }
 .sectionIntro .code .filtro {
   width: 100%;
@@ -218,6 +219,7 @@ header {
   }
   .sectionIntro .code {
     height: calc(100% - 668px);
+    background-size: cover;
   }
 }
 @media screen and (max-width: 800px) {
@@ -234,6 +236,7 @@ header {
   }
   .sectionIntro .code {
     height: calc(100% - 326px);
+    background-size: cover;
   }
 }
 @media screen and (max-width: 560px) {
@@ -254,12 +257,14 @@ header {
   }
   .sectionIntro .code {
     height: calc(100% - 265px);
+    background-size: cover;
   }
 }
 @media screen and (max-width: 420px) {
   .sectionIntro .code {
     position: relative;
     height: calc(100%);
+    background-size: cover;
   }
   .sectionIntro .perfil {
     margin-top: 0;
