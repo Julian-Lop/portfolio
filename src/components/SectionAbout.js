@@ -1,5 +1,5 @@
 import '../css/styles.css';
-import cvpdf from '../Documentos/cv_Julian_Lopez.pdf'
+import cvpdf from '../Documentos/CV_JULIAN_LOPEZ_.pdf'
 import html from '../images/html-5.png'
 import js from '../images/js.png'
 import react from '../images/react.png'
