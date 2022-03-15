@@ -467,7 +467,6 @@ header {
 .sectionPortfolio {
   font-family: 'League Spartan', sans-serif;
   background: #191919;
-  height: 800px;
   width: 100%;
   margin-left: 0%;
   margin-bottom: 10%;
@@ -496,9 +495,11 @@ header {
   flex-wrap: wrap;
 }
 .sectionPortfolio .containerProyects .proyect {
+  display: flex;
+  flex-direction: column;
   margin: 10px;
   border-radius: 10px;
-  height: 50%;
+  height: 60%;
   width: 40%;
 }
 .sectionPortfolio .containerProyects .proyect video {
@@ -509,10 +510,7 @@ header {
 }
 .sectionPortfolio .containerProyects .proyect .info {
   position: relative;
-  margin-top: -53%;
-  z-index: 2;
   border-radius: 20px;
-  height: 100%;
   width: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
   display: flex;
@@ -547,9 +545,13 @@ header {
   .sectionPortfolio .containerProyects .proyect {
     height: 320px;
     width: 480px;
+    margin-bottom: 80px;
   }
   .sectionPortfolio .containerProyects .proyect .info {
-    margin-top: -325px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .sectionPortfolio p {
     font-size: 13px;

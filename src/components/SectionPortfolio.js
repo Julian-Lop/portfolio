@@ -38,7 +38,6 @@ function SectionPortfolio() {
                 </p>
             </div>
         </div>
-        <div className="proyect" ></div>
       </div>
     </div>
   )
