@@ -22,7 +22,7 @@ function SectionPortfolio() {
                 <h3><a href="https://julian-lop.github.io/appweather/" >Weather App</a></h3>
                 <a href="https://github.com/Julian-Lop/appweather" ><img src={github}/></a>
                 <p>Aplicación para ver el clima de la localización especificada.
-                  Usando React, React-dom, less y haciendo peticiones a Api.
+                  Usando React, React-dom, Less y haciendo peticiones a Api.
                 </p>
             </div>
         </div>
@@ -47,7 +47,7 @@ function SectionPortfolio() {
                 <h3><a>Proyecto Final Rescuepets</a></h3>
                 {/* <a href="https://github.com/Julian-Lop/Client-api-dog" ><img src={github}/></a> */}
                 <p>Proyecto final grupal Rescuepets. Utilizando React, Redux, Node js, 
-                  , pasarela de mercadopago, jwt, Express, Postgresql, Sequelize ORM y styledmodules. 
+                  , pasarela de mercadopago, jwt, Express, Postgresql, Sequelize ORM y Styledmodules. 
                 </p>
             </div>
         </div>
