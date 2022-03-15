@@ -74,7 +74,7 @@ function SectionContact() {
             <label>Email</label>
             <input type='text' name='email' value={email} onChange={e => validateForm(e.target)}></input>
             <label>Por qué quieres contactarme</label>
-            <textarea type='text' name='message' ></textarea>
+            <textarea type='text' name='message' value={mensaje} onChange={e => validateForm(e.target)}></textarea>
             {/* <input type='submit'  className='botonSend' value='Enviar' /> */}
             <button type='submit' disabled={ (errorName || errorEmail) && true} >Enviar</button>
           </form>
