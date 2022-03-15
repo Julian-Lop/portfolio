@@ -2,6 +2,7 @@ import '../css/styles.css';
 import videoWeather from '../videos/videoPruebaWeather.mp4'
 import videodog from '../videos/review-pi-dog.mp4'
 import github from '../images/tabler-icon-brand-github.svg'
+import videorescuepets from '../videos/review-rescuepets.mp4'
 
 function SectionPortfolio() {
   return (
@@ -35,6 +36,18 @@ function SectionPortfolio() {
                 <p>Proyecto individual de backend y frontend. Utilizando React, Redux, Node js, 
                   Express, Postgresql, Sequelize ORM y less. Consumiendo datos de una api y
                   guardando otros en la base de datos.
+                </p>
+            </div>
+        </div>
+        <div className="proyect" >
+            <video autoPlay loop muted>
+              <source src={videorescuepets} type="video/mp4"/>
+            </video>
+            <div className="info">
+                <h3><a>Proyecto Final Rescuepets</a></h3>
+                {/* <a href="https://github.com/Julian-Lop/Client-api-dog" ><img src={github}/></a> */}
+                <p>Proyecto final grupal Rescuepets. Utilizando React, Redux, Node js, 
+                  , pasarela de mercadopago, jwt, Express, Postgresql, Sequelize ORM y styledmodules. 
                 </p>
             </div>
         </div>
