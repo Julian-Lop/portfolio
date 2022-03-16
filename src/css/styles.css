@@ -498,9 +498,10 @@ header {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.09);
   border-radius: 10px;
   height: 60%;
-  width: 40%;
+  width: 45%;
 }
 .sectionPortfolio .containerProyects .proyect video {
   width: 100%;
@@ -536,14 +537,10 @@ header {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 800px) {
-  .sectionPortfolio {
-    height: 100%;
-  }
   .sectionPortfolio .containerProyects {
     width: 80%;
   }
   .sectionPortfolio .containerProyects .proyect {
-    height: 320px;
     width: 480px;
     margin-bottom: 80px;
   }

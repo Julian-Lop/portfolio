@@ -47,7 +47,12 @@ function SectionPortfolio() {
                 <h3><a>Proyecto Final Rescuepets</a></h3>
                 {/* <a href="https://github.com/Julian-Lop/Client-api-dog" ><img src={github}/></a> */}
                 <p>Proyecto final grupal Rescuepets. Utilizando React, Redux, Node js, 
-                  , pasarela de mercadopago, jwt, Express, Postgresql, Sequelize ORM y Styledmodules. 
+                  , pasarela de mercadopago, jwt, Express, Postgresql, Sequelize ORM y Styledmodules.
+                  Tiene la finalidad de conectar a los refugios de la zona con posibles adoptantes. Cuenta con
+                  vistas a los refugios, mascotas y poner hacer donaciones por parte del usuario. Por parte del refugio,
+                  posee un Dashboard donde puede ver y administrar todos los datos de mascotas, seguimientos, formularios customizados,
+                  respuestas de formularios, estadisticas. También tiene un Dashboard administrativo para poder deshabilitar refugios, mascotas
+                  y demás. Contando este con estadisticas de los refugios con respecto a mascotas y donaciones.
                 </p>
             </div>
         </div>
